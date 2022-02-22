@@ -4,14 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script> 
-    <title>Array for Loops </title>
+  
+    <title>Marvel Characters</title>
 </head>
 <body>
-    <div class="output">
-        <p id="demo">marvelChar</p>
+    <form name="selectForm">
+        <p>
+          <label for="marvelFem">Select most relatable Super Hero and then submit answer:</label>
+          <select id="marvelFem" name="marvelFem" multiple="multiple">
+            <option selected="selected">Rogue</option>
+            <option>Storm</option>
+            <option>Jessica Jones</option>
+            <option>Squirrel Girl</option>
+            <option>Jean Grey</option>
+            <option>Wasp</option>
+          </select>
+        </p>
+        <p><input id="btn" type="button" value="How many Heroes did you select?" /></p>
+      </form>
+      
+      <script>
+        function howMany(marvelFem) {
+          let numberSelected = 0;
+          for (let i = 0; i < selectObject.options.length; i++) {
+            if (selectObject.options[i].selected) {
+              numberSelected++;
+            }
+          }
+          return numberSelected;
+        }
         
-      </div>
-   
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', function() {
+          alert('Number of options selected: ' + howMany(document.selectForm.musicTypes));
+        });
+        </script>
+          
 </body>
 </html>
