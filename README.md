@@ -15,4 +15,16 @@ Not going to lie, this is clearly not a strong point for me. However, after a we
 3.) I am hoping to at least pass this assignment as I THINK I have:
 - declared an empty output variable
 - made an array list of items
-- assigned 
+- assigned ...
+
+## final update - 
+
+- i am understanding more! 
+
+## Error code when button is selected. 
+
+I am late handing in and honestly am just amazed I havent even gotten this far.
+
+but I am running in an error code with my button - I am thinking I havent properlfy declared my "subjectobject"
+
+
